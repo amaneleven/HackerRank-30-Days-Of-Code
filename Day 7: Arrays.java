@@ -2,21 +2,20 @@
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int []a=new int[10];
-        int n;
-        
-        n=sc.nextInt();
-        for(int i=0;i<n;i++){
-            a[i]=sc.nextInt();            
+        /* Read and save input */
+        Scanner scan = new Scanner(System.in);
+        int size = scan.nextInt();
+        int [] array = new int[size];
+        for (int i = 0; i < size; i++) {
+            array[i] = scan.nextInt();
         }
-       // int aL=a.length;
-        for(int i=n-1;i>=0;i--){
-            System.out.print(a[i]+" ");
-        }
+        scan.close();
         
 //Author : AmanEleven
-//Follow : All Personal and Professional Links Here -->  https://linktr.ee/amaneleven     
+//Follow : All Personal and Professional Links Here -->  https://linktr.ee/amaneleven
         
+        for (int i = size - 1; i >= 0; i--) {
+            System.out.print(array[i] + " ");
+        }
     }
 }
